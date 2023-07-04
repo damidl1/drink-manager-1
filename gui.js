@@ -37,7 +37,14 @@ class GUI{
 
   showBeverages(){
 
-    const allBeverages = getAllBeverages();
+    const allBeverages = this.cellar.getAllBeverages();
+    alert(allBeverages);
+
+  }
+
+  addBeverage(){
+
+    const allBeverages = this.cellar.getAllBeverages();
     alert(allBeverages);
 
   }
