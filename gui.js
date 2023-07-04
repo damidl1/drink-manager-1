@@ -44,15 +44,17 @@ class GUI{
 
   addBeverage(){
 
+    
+
    const name = prompt('Inserisci il nome della bevanda: ');
    const maker = prompt('Inserisci il produttore: ');
    const dop = prompt('Inserisci la data di produzione in formato yyyy: ');
    const vol = prompt('Inserisci la gradazione alcolica del prodotto: ');
    const type = prompt('Inserisci il tipo di bevanda: ');
    
-  const beverage = new Beverage(name, maker, dop, vol, type);
+  const bev = new Beverage(name, maker, dop, vol, type);
 
-  this.cellar.addBeverage();
+  this.cellar.addBeverage(bev);
    
   }
 
