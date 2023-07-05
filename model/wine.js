@@ -8,13 +8,9 @@ class Wine extends Beverage {
 
 
     toString(){
-        const card = super.toString() +
-                    'Zona: ' + this.region + '\n' +
-                    'Vitigno: ' + this.vine;
-        return card;
+       return 'Vino:\n' + super.toString() +
+       'Regione: ' + this.region + '\n' +
+       'Vitigno: ' + this.vine + '\n';
     }
-
-
-
 
 }
